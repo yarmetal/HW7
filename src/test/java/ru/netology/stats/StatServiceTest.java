@@ -8,7 +8,7 @@ public class StatServiceTest {
     @Test
     void statSumAllSales() {
         StatService service = new StatService();
-        int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 180;
         long actual = service.sumAllSales(sales);
         Assertions.assertEquals(expected, actual);
