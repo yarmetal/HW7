@@ -18,7 +18,7 @@ public class StatService {
         return averageSum / sales.length;
     }
 
-    public long maxSales(long[] sales) {
+    public int maxSales(int[] sales) {
         int maxMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
@@ -29,7 +29,7 @@ public class StatService {
         return maxMonth + 1;
     }
 
-    public long minSales(long[] sales) {
+    public int minSales(int[] sales) {
         int minMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
